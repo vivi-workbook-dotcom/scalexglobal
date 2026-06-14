@@ -365,15 +365,15 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-m);
+  gap: var(--space-l);
   flex-wrap: wrap;
   margin: var(--space-l) 0 var(--space-s);
 }
 
 .logo-img {
-  height: 48px;
+  height: 80px;
   width: auto;
-  max-width: 130px;
+  max-width: 180px;
   object-fit: contain;
   opacity: 0.85;
   transition: opacity 0.2s;
