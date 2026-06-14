@@ -10,8 +10,8 @@
   --ink:     #0A0A0A;
   --ink-2:   #444444;
   --ink-3:   #888888;
-  --accent:  #0D2B5E;
-  --accent-d:#091f47;
+  --accent:  #1A3A6B;
+  --accent-d:#122d56;
   --white:   #FFFFFF;
   --border:  #E2E2E2;
   --card-bg: #F5F6F8;
@@ -227,7 +227,7 @@ a { color: inherit; text-decoration: none; }
   padding-bottom: var(--space-xl);
   position: relative;
   overflow: hidden;
-  background-image: radial-gradient(circle, rgba(13,43,94,0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(26,58,107,0.08) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
