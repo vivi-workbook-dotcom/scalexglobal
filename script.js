@@ -43,6 +43,44 @@ if (form) {
   });
 }
 
+// Animated stat counters (trigger on scroll into view)
+function animateCounter(el) {
+  const raw = el.textContent.trim();
+  // Extract prefix (₹), number, and suffix (+, Cr, %, etc.)
+  const match = raw.match(/^([^\d]*)(\d+(?:\.\d+)?)(.*)$/);
+  if (!match) return;
+  const prefix = match[1];
+  const target = parseFloat(match[2]);
+  const suffix = match[3];
+  const duration = 1600;
+  const start = performance.now();
+
+  function tick(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    // Ease out cubic
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.round(eased * target);
+    el.textContent = prefix + current + suffix;
+    if (progress < 1) requestAnimationFrame(tick);
+    else el.textContent = raw; // restore exact original
+  }
+  requestAnimationFrame(tick);
+}
+
+const statEls = document.querySelectorAll('.stat__num');
+if (statEls.length && 'IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  statEls.forEach(el => observer.observe(el));
+}
+
 // Mark active nav link
 const current = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav__links a, .nav__mobile a').forEach(a => {
