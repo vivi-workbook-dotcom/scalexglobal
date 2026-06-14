@@ -967,4 +967,12 @@ a { color: inherit; text-decoration: none; }
   .footer__inner { grid-template-columns: 1fr; }
 
   .cta-banner .btn { display: block; margin: 0.5rem auto; max-width: 280px; text-align: center; }
+
+  .section--dark .btn,
+  .section--accent .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
