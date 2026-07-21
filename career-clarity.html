@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Clarity Coach India | One-to-One | Venkat Kumar Naidu | ₹1,999</title>
+  <meta name="description" content="Confused about your career? Get a one-to-one career clarity conversation with Venkat Kumar Naidu — 25 years of industry experience, Bhagavad Gita practitioner, Hyderabad. ₹1,999. Apply now. Selective intake." />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.scalexglobal.in/career-clarity" />
+  <meta property="og:title" content="Most Young Indians Are Busy. Almost None of Them Are Going Anywhere. | ScaleX Global" />
+  <meta property="og:description" content="Career Clarity Coaching by Venkat Kumar Naidu. One-to-one. ₹1,999. Selective intake. For young Indian professionals aged 18–27." />
+  <meta property="og:image" content="https://www.scalexglobal.in/meta-og-scalex.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Career Clarity Coach India | Venkat Kumar Naidu" />
+  <meta name="twitter:description" content="One-to-one career clarity conversation. ₹1,999. Selective intake." />
+  <meta name="twitter:image" content="https://www.scalexglobal.in/meta-og-scalex.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="scalex-favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* ── Career Clarity page-scoped theme (navy + gold) ────── */
+    .cc-page { --gold: #B8952A; --navy-deep: #1B2A6B; }
+
+    .cc-hero {
+      background: var(--navy-deep);
+      color: #fff;
+      padding-top: calc(68px + var(--space-xl));
+      padding-bottom: var(--space-xl);
+      text-align: center;
+    }
+    .cc-hero__tag {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-m);
+    }
+    .cc-hero h1 { color: #fff; max-width: 16ch; margin: 0 auto 0.3em; }
+    .cc-hero__lines { color: rgba(255,255,255,0.8); font-size: 1.05rem; margin: var(--space-m) auto; max-width: 30ch; line-height: 1.9; }
+    .cc-hero__question { font-family: var(--font-head); font-style: italic; font-size: clamp(1.2rem, 2.2vw, 1.6rem); color: #fff; max-width: 34ch; margin: var(--space-m) auto; }
+    .cc-hero__sub { color: rgba(255,255,255,0.75); max-width: 46ch; margin: 0 auto var(--space-l); font-size: 1.02rem; }
+    .cc-hero__actions { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+    .cc-hero__note { font-size: 0.82rem; color: rgba(255,255,255,0.55); }
+    .cc-hero__tagline { margin-top: var(--space-l); font-family: var(--font-head); font-style: italic; color: var(--gold); font-size: 0.95rem; }
+
+    .btn-gold { background: var(--gold); color: #1a1a1a; border-color: var(--gold); }
+    .btn-gold:hover { background: #a1811f; border-color: #a1811f; transform: translateY(-1px); }
+    .btn-outline-gold { background: transparent; color: var(--gold); border-color: var(--gold); }
+    .btn-outline-gold:hover { background: var(--gold); color: #1a1a1a; }
+
+    .cc-eyebrow-gold {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: var(--space-s);
+    }
+    .cc-divider-gold { width: 48px; height: 3px; background: var(--gold); margin: var(--space-s) 0 var(--space-m); }
+
+    .cc-truth-list { list-style: none; margin: var(--space-m) 0; max-width: 60ch; }
+    .cc-truth-list li { position: relative; padding-left: 1.6rem; margin-bottom: 0.6rem; color: var(--ink-2); }
+    .cc-truth-list li::before { content: '▸'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+
+    .cc-questions { max-width: 60ch; margin: var(--space-m) 0; }
+    .cc-questions p { font-weight: 600; color: var(--ink); margin-bottom: 0.5rem; }
+
+    .cc-callout { background: var(--navy-deep); color: #fff; padding: var(--space-m); border-radius: 8px; text-align: center; max-width: 60ch; margin: var(--space-m) 0; }
+    .cc-callout strong { color: var(--gold); font-family: var(--font-head); font-size: 1.15rem; }
+
+    .cc-outcome-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-m); margin-top: var(--space-l); }
+    .cc-outcome-card { }
+    .cc-outcome-num {
+      display: flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--gold); color: #1a1a1a; font-weight: 700; font-family: var(--font-head);
+      margin-bottom: var(--space-s);
+    }
+    .cc-outcome-card h4 { margin-bottom: 0.4rem; }
+    .cc-outcome-card p { font-size: 0.93rem; max-width: none; }
+    .cc-summary-italic { font-family: var(--font-head); font-style: italic; font-size: 1.1rem; color: var(--navy-deep); margin-top: var(--space-l); }
+
+    .cc-persona-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-m); margin-top: var(--space-l); }
+    .cc-persona-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: var(--space-m); transition: transform 0.2s, box-shadow 0.2s; }
+    .cc-persona-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+    .cc-persona-card h4 { color: var(--navy-deep); margin-bottom: 0.4rem; font-size: 1.02rem; }
+    .cc-persona-card p { font-size: 0.9rem; max-width: none; }
+    .cc-persona-close { margin-top: var(--space-l); font-weight: 700; color: var(--navy-deep); font-size: 1.1rem; }
+
+    .cc-raja-rishi { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-m); margin: var(--space-l) 0; }
+    .cc-raja-rishi-card { background: rgba(255,255,255,0.06); border-radius: 8px; padding: var(--space-m); }
+    .cc-raja-rishi-card h3 { color: var(--gold); margin-bottom: 0.5rem; }
+    .cc-raja-rishi-card p { color: rgba(255,255,255,0.8); max-width: none; }
+    @media (max-width: 700px) { .cc-raja-rishi { grid-template-columns: 1fr; } }
+
+    .cc-gold-list { list-style: none; max-width: 62ch; margin: var(--space-m) 0; }
+    .cc-gold-list li { position: relative; padding-left: 1.6rem; margin-bottom: 0.75rem; color: rgba(255,255,255,0.85); }
+    .cc-gold-list li::before { content: '▸'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+    .cc-gold-summary { font-family: var(--font-head); font-style: italic; color: var(--gold); font-size: 1.15rem; margin-top: var(--space-m); }
+
+    .cc-quote-section { background: #FBF7EE; text-align: center; }
+    .cc-quote-section blockquote { font-family: var(--font-head); font-style: italic; font-size: clamp(1.2rem, 2.5vw, 1.6rem); color: var(--navy-deep); max-width: 62ch; margin: 0 auto var(--space-m); line-height: 1.6; }
+    .cc-quote-section cite { display: block; color: var(--gold); font-weight: 700; letter-spacing: 0.04em; margin-bottom: var(--space-s); }
+    .cc-quote-section .cc-bridge { color: var(--ink-3); font-style: italic; font-size: 0.95rem; }
+
+    .cc-step__num { color: var(--gold) !important; }
+    .cc-step-callout { background: var(--card-bg); border-radius: 8px; padding: var(--space-m); text-align: center; margin-top: var(--space-l); }
+    .cc-step-callout strong { color: var(--navy-deep); }
+
+    .cc-price { text-align: center; }
+    .cc-price__num { font-family: var(--font-head); font-weight: 800; font-size: clamp(3rem, 8vw, 5rem); color: var(--navy-deep); line-height: 1; }
+    .cc-price__tag { color: var(--gold); font-weight: 700; letter-spacing: 0.04em; margin: 0.5rem 0 var(--space-m); }
+    .cc-price-why { max-width: 62ch; margin: var(--space-l) auto 0; }
+    .cc-price-table { width: 100%; max-width: 640px; margin: var(--space-m) auto; border-collapse: collapse; }
+    .cc-price-table th, .cc-price-table td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    .cc-price-table th { color: var(--ink-3); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .cc-price-table tr:last-child td { font-weight: 700; color: var(--navy-deep); border-bottom: none; }
+    .cc-price-table td:last-child, .cc-price-table th:last-child { text-align: right; }
+
+    .cc-timeline-table { width: 100%; margin-top: var(--space-m); border-collapse: collapse; }
+    .cc-timeline-table th, .cc-timeline-table td { padding: 0.65rem 1rem 0.65rem 0; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+    .cc-timeline-table th { color: var(--ink-3); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .cc-timeline-table td:first-child { color: var(--gold); font-weight: 700; white-space: nowrap; }
+
+    .cc-institution-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-m); margin: var(--space-l) 0; }
+    .cc-institution-card { background: rgba(255,255,255,0.06); border-radius: 8px; padding: var(--space-m); }
+    .cc-institution-card h4 { color: var(--gold); margin-bottom: 0.5rem; font-size: 0.95rem; letter-spacing: 0.03em; text-transform: uppercase; }
+    .cc-institution-card p { color: rgba(255,255,255,0.8); font-size: 0.9rem; max-width: none; }
+    .cc-fee-box { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: var(--space-m); text-align: center; max-width: 60ch; margin: var(--space-m) 0; }
+    .cc-fee-box strong { color: var(--gold); font-size: 1.3rem; font-family: var(--font-head); display: block; margin-bottom: 0.3rem; }
+    .cc-fee-box span { color: rgba(255,255,255,0.7); font-size: 0.88rem; }
+
+    .cc-parent-section { background: #FCF9F0; }
+    .cc-parent-list { list-style: none; max-width: 60ch; margin: var(--space-m) 0; }
+    .cc-parent-list li { position: relative; padding-left: 1.6rem; margin-bottom: 0.5rem; color: var(--ink-2); }
+    .cc-parent-list li::before { content: '▸'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+    .cc-parent-quote { font-family: var(--font-head); font-style: italic; font-size: 1.2rem; color: var(--navy-deep); max-width: 56ch; margin: var(--space-l) 0; line-height: 1.6; }
+
+    .cc-form-intro { max-width: 62ch; margin-bottom: var(--space-l); }
+    .cc-form-intro p { margin-bottom: 0.75rem; }
+    .cc-form-note { font-size: 0.82rem; color: var(--ink-3); margin-top: var(--space-s); }
+
+    .cc-form-dark .form__group label { color: rgba(255,255,255,0.6); }
+    .cc-form-dark .form__group input,
+    .cc-form-dark .form__group select,
+    .cc-form-dark .form__group textarea {
+      background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.2); color: #fff;
+    }
+    .cc-form-dark .form__group input::placeholder,
+    .cc-form-dark .form__group textarea::placeholder { color: rgba(255,255,255,0.35); }
+    .cc-form-dark .form__group select { background-color: transparent; }
+  </style>
+</head>
+<body class="cc-page">
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="scalexlogo.png" alt="ScaleX Global" style="height:36px; width:auto; display:block;">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fundraising.html">Fundraising Advisory</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#apply" class="btn btn-gold nav__cta">Apply Now</a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile">
+      <a href="index.html">Home</a>
+      <a href="fundraising.html">Fundraising Advisory</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#apply" class="btn btn-gold">Apply Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── S1 · Hero ──────────────────────────────────────────── -->
+<section class="cc-hero">
+  <div class="container">
+    <div class="cc-hero__tag">Career Clarity Coaching · Venkat Kumar Naidu</div>
+    <h1>Most Young Indians Are Busy.<br>Almost None of Them Are Going Anywhere.</h1>
+    <p class="cc-hero__lines">They're working hard.<br>Studying harder.<br>Scrolling hardest.</p>
+    <p class="cc-hero__question">"Is this actually going somewhere? Or am I just... moving?"</p>
+    <p class="cc-hero__sub">
+      That question deserves a real answer. Not a course. Not a cohort. Not a YouTube video.<br><br>
+      A real conversation. With someone who has lived the answer.
+    </p>
+    <div class="cc-hero__actions">
+      <a href="#apply" class="btn btn-gold">Apply for a One-to-One Clarity Conversation</a>
+      <span class="cc-hero__note">Selective intake. Reviewed personally by Venky. Not for everyone.</span>
+    </div>
+    <div class="cc-hero__tagline">Career Clarity Coaching by Venkat Kumar Naidu &nbsp;|&nbsp; Become Exceptional.</div>
+  </div>
+</section>
+
+<!-- ── S2 · The Uncomfortable Truth ──────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="cc-eyebrow-gold">The Uncomfortable Truth</div>
+    <h2>India Produces Millions of Graduates Every Year.<br>It Produces Very Few People Who Know What They're Doing — And Why.</h2>
+    <div class="cc-divider-gold"></div>
+    <p style="max-width:62ch;">This is not an insult. It is a structural failure.</p>
+
+    <ul class="cc-truth-list">
+      <li>Our schools taught us to score marks.</li>
+      <li>Our colleges taught us to get placed.</li>
+      <li>Our families taught us to be safe.</li>
+      <li>Nobody taught us to be intentional.</li>
+    </ul>
+
+    <p style="max-width:62ch; margin-bottom:0.5rem;">Nobody sat across from us and asked:</p>
+    <div class="cc-questions">
+      <p>What do you actually want?</p>
+      <p>What are you genuinely built for?</p>
+      <p>What does your version of an exceptional life look like?</p>
+      <p>And what is standing between you and it — right now?</p>
+    </div>
+    <p style="max-width:62ch;">These four questions change everything.</p>
+    <p style="max-width:62ch;">Most people spend a decade finding the answers by accident.</p>
+
+    <div class="cc-callout">
+      <strong>A Clarity Conversation finds them faster.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ── S3 · What This Is (Not a Course) ──────────────────── -->
+<section class="section" style="background:var(--card-bg);">
+  <div class="container">
+    <div class="cc-eyebrow-gold">What This Is</div>
+    <h2>This Is Not a Course.<br>Not a Cohort.<br>This Is a Conversation.</h2>
+    <div class="cc-divider-gold"></div>
+    <p style="max-width:62ch;">
+      One conversation. With Venkat Kumar Naidu. Personally.<br>
+      No slides. No modules. No generic frameworks photocopied from an American self-help book.
+    </p>
+    <p style="max-width:62ch; margin-top:1rem;">
+      Just you — honest about where you are.<br>
+      And Venky — listening with 25 years of industry wisdom, asking the questions nobody else has asked you.
+    </p>
+    <p style="max-width:62ch; margin-top:1rem; font-weight:600; color:var(--ink);">In that conversation, three things happen:</p>
+
+    <div class="cc-outcome-grid">
+      <div class="cc-outcome-card">
+        <div class="cc-outcome-num">1</div>
+        <h4>You articulate — perhaps for the first time — exactly where you stand.</h4>
+        <p>Not where you think you should be. Where you actually are.</p>
+      </div>
+      <div class="cc-outcome-card">
+        <div class="cc-outcome-num">2</div>
+        <h4>Venky reflects that back with clarity you couldn't find alone.</h4>
+        <p>Not because you aren't intelligent — but because you are too close to your own life to see it clearly.</p>
+      </div>
+      <div class="cc-outcome-card">
+        <div class="cc-outcome-num">3</div>
+        <h4>You leave with a direction. Specific. Honest. Yours.</h4>
+        <p>Not a five-year plan carved in stone. A next step — the right next step — taken with conviction.</p>
+      </div>
+    </div>
+    <p class="cc-summary-italic">That is what a Clarity Conversation delivers.</p>
+  </div>
+</section>
+
+<!-- ── S4 · Who This Is For ──────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="cc-eyebrow-gold">Who This Is For</div>
+    <h2>You Don't Need More Motivation.<br>You Need a Mirror. And a Map.</h2>
+    <div class="cc-divider-gold"></div>
+    <p style="max-width:60ch;">This is for you if —</p>
+
+    <div class="cc-persona-grid">
+      <div class="cc-persona-card">
+        <h4>You feel the gap — but can't name it.</h4>
+        <p>You're between 18 and 27, and you know you could be further — but you can't close the distance or explain it to anyone.</p>
+      </div>
+      <div class="cc-persona-card">
+        <h4>You're employed — but not engaged.</h4>
+        <p>You show up. You deliver. But something feels hollow and you don't know why.</p>
+      </div>
+      <div class="cc-persona-card">
+        <h4>You've been told what to become — but never asked what you want.</h4>
+        <p>Student. Score. Placement. Repeat. Nobody asked the one question that matters.</p>
+      </div>
+      <div class="cc-persona-card">
+        <h4>You're at a crossroads and everyone gives you their answer — not yours.</h4>
+        <p>Job or MBA. India or abroad. Stability or ambition. Every person you ask tells you what they would do.</p>
+      </div>
+      <div class="cc-persona-card">
+        <h4>You're ready to pivot — but don't know where to start.</h4>
+        <p>Entrepreneurship. A new field. A career that fits. The direction exists. The first step doesn't.</p>
+      </div>
+      <div class="cc-persona-card">
+        <h4>You've consumed everything — and you're still confused.</h4>
+        <p>Books. Reels. Podcasts. Gurus. You've done the work. The clarity hasn't come.</p>
+      </div>
+    </div>
+    <p class="cc-persona-close">If any of that is you — you're not lost. You're just uncoached.</p>
+  </div>
+</section>
+
+<!-- ── S5 · The Rajarshi Framework ───────────────────────── -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="cc-eyebrow-gold">The Rajarshi Framework</div>
+    <h2 style="color:#fff;">The Rajarshi Within You.<br><span style="color:var(--gold);">Power. Vision. Purpose. In That Order.</span></h2>
+    <div class="cc-divider-gold"></div>
+    <p style="max-width:62ch; color:rgba(255,255,255,0.8);">The ancient Sanskrit word Rajarshi carries two roots.</p>
+
+    <div class="cc-raja-rishi">
+      <div class="cc-raja-rishi-card">
+        <h3>RAJA</h3>
+        <p>The one who leads. Who acts. Who takes responsibility and holds ground.</p>
+      </div>
+      <div class="cc-raja-rishi-card">
+        <h3>RISHI</h3>
+        <p>The one who sees clearly. Who thinks before acting. Who has vision beyond the immediate.</p>
+      </div>
+    </div>
+
+    <p style="max-width:62ch; color:rgba(255,255,255,0.8);">
+      A Rajarshi is not a title reserved for kings or executives.<br>
+      It is a way of being — available to every person willing to do the honest inner work.
+    </p>
+
+    <ul class="cc-gold-list">
+      <li>You don't just work hard. You work with direction.</li>
+      <li>You don't just have ambition. You have clarity about what that ambition is for.</li>
+      <li>You are not driven by fear of failure. You are pulled by the force of purpose.</li>
+    </ul>
+
+    <p class="cc-gold-summary">
+      The Clarity Conversation exists to awaken that.<br>
+      The Rajarshi in you already exists. The conversation reveals it.
+    </p>
+  </div>
+</section>
+
+<!-- ── S6 · Vivekananda Anchor ───────────────────────────── -->
+<section class="section cc-quote-section">
+  <div class="container">
+    <blockquote>"Take up one idea. Make that one idea your life — think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success."</blockquote>
+    <cite>— Swami Vivekananda</cite>
+    <p class="cc-bridge">The Clarity Conversation exists to help you find that one idea. Everything else follows.</p>
+  </div>
+</section>
+
+<!-- ── S7 · How It Works ──────────────────────────────────── -->
+<section class="section" style="background:var(--card-bg);">
+  <div class="container">
+    <div class="cc-eyebrow-gold">How It Works</div>
+    <h2>Simple. Personal. No Surprises.</h2>
+    <div class="cc-divider-gold"></div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step__num cc-step__num">1</div>
+        <div>
+          <h4>You Apply</h4>
+          <p>Fill the application below. Answer honestly — not impressively. Venky reads every application personally. Your answers — not your resume — determine whether this is the right moment for you.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num cc-step__num">2</div>
+        <div>
+          <h4>Venky Reviews</h4>
+          <p>Within 72 hours, you receive a personal response. If selected, a one-to-one conversation is scheduled at a time that works for both of you.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num cc-step__num">3</div>
+        <div>
+          <h4>Pay &amp; Confirm</h4>
+          <p>Once selected, you pay ₹1,999 to confirm your slot. No payment before selection. No pressure. No rush.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num cc-step__num">4</div>
+        <div>
+          <h4>The Conversation</h4>
+          <p>One focused session. Entirely about you. Where you are. What's unclear. What's holding you back. What your next move should be. Venky asks. You answer honestly. Clarity emerges.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num cc-step__num">5</div>
+        <div>
+          <h4>Venky Stays Reachable</h4>
+          <p>The conversation doesn't end the relationship. As you move forward and face decisions, Venky remains reachable on WhatsApp or email. A quick question. A sanity check. A course correction. Whenever you need it.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cc-step-callout">
+      <strong>Pay once. Venky stays reachable.</strong><br>
+      No tiers. No upgrades. No further charges. Ever.
+    </div>
+  </div>
+</section>
+
+<!-- ── S8 · The Investment ───────────────────────────────── -->
+<section class="section">
+  <div class="container cc-price">
+    <div class="cc-eyebrow-gold">The Investment</div>
+    <div class="cc-price__num">₹1,999</div>
+    <div class="cc-price__tag">One Payment.&nbsp; No Tiers.&nbsp; No Surprises.</div>
+
+    <div style="max-width:60ch; margin:0 auto; text-align:left;">
+      <p>That is what this costs. There is nothing else to pay. No follow-up package. No premium tier. No renewal.</p>
+      <p style="margin-top:1rem;">You apply. You are selected. You pay ₹1,999. The conversation happens. Venky stays reachable. That is the entire model.</p>
+
+      <h3 class="mt-l" style="color:var(--navy-deep);">Why ₹1,999?</h3>
+      <p style="margin-top:0.75rem;">Because career clarity should not be a privilege of the affluent — but it also should not be free. Free things are treated as worthless. ₹1,999 is real enough to signal seriousness. Accessible enough that no genuinely committed young Indian has to say no because of price.</p>
+
+      <ul class="cc-truth-list mt-m">
+        <li>A student in Kakinada can afford it.</li>
+        <li>A first-year professional in Hyderabad pays it without hesitation.</li>
+        <li>A parent who reads this page pays it gratefully.</li>
+      </ul>
+    </div>
+
+    <table class="cc-price-table">
+      <thead>
+        <tr><th>What ₹1,999 Replaces</th><th>Typical Cost</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>One wrong job that costs you a year</td><td>₹3–5 Lakh in opportunity loss</td></tr>
+        <tr><td>One MBA application cycle of confusion</td><td>₹50,000+ in time and fees</td></tr>
+        <tr><td>6 months of career drift</td><td>Unquantifiable</td></tr>
+        <tr><td>A career coaching programme</td><td>₹15,000 – ₹50,000</td></tr>
+        <tr><td>This conversation</td><td>₹1,999</td></tr>
+      </tbody>
+    </table>
+
+    <a href="#apply" class="btn btn-gold mt-l">Apply Now — ₹1,999 for a Conversation That Changes Direction</a>
+    <p class="small mt-s" style="color:var(--ink-3);">Payment collected only after selection. Not before.</p>
+  </div>
+</section>
+
+<!-- ── S9 · About Your Coach ─────────────────────────────── -->
+<section class="section" style="background:var(--card-bg);">
+  <div class="container">
+    <div class="cc-eyebrow-gold">About Your Coach</div>
+    <h2>He Didn't Learn This in a Coaching Programme.<br>He Learned It in 25 Years of Watching People Win and Lose.</h2>
+    <div class="cc-divider-gold"></div>
+
+    <div class="founder-split">
+      <div>
+        <p style="font-size:1.05rem;">Venkat Kumar Naidu has spent a quarter century at the intersection of industry, capital, and human performance.</p>
+        <p style="margin-top:1rem;">He has hired people. He has built teams. He has watched talented young professionals stall — not because they lacked ability, but because they lacked direction. He has also watched seemingly ordinary people achieve extraordinary outcomes — because they found their clarity early and refused to let go of it.</p>
+        <p style="margin-top:1rem;">He has read the Bhagavad Gita not as a religious text — but as the world's most precise manual on action, purpose, and the psychology of performance under pressure. He has studied Swami Vivekananda not as a historical figure — but as a living philosophy. A blueprint for becoming exceptional that is more relevant today than it has ever been.</p>
+        <p style="margin-top:1rem;">He speaks five languages. He has operated across five industries. He has raised hundreds of crores for other people's businesses.</p>
+        <p style="margin-top:1rem;">And for the last several years, he has asked one question:</p>
+        <p style="margin-top:0.5rem; font-family:var(--font-head); font-style:italic; color:var(--navy-deep); font-size:1.1rem;">What would change in India if its young people found their direction before the decade of drift begins?</p>
+        <p style="margin-top:1rem; font-weight:700; color:var(--ink);">Career Clarity Coaching is his answer. This is not a side project. This is a mission.</p>
+
+        <div class="mt-l" style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="https://wa.me/916305224611" target="_blank" rel="noopener" class="btn btn-outline">Join DailyGita on WhatsApp</a>
+          <a href="https://www.linkedin.com/in/venkat-kumar-naidu/" target="_blank" rel="noopener" class="btn btn-outline">Connect with Venky on LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <img src="venkat.jpg" alt="Venkat Kumar Naidu, Career Clarity Coach" style="width:100%; border-radius:8px; display:block; object-fit:cover; aspect-ratio:3/4;" />
+      </div>
+    </div>
+
+    <table class="cc-timeline-table">
+      <thead><tr><th>Period</th><th>Role &amp; Domain</th></tr></thead>
+      <tbody>
+        <tr><td>15 Years</td><td>Industrial Research &amp; Engineering — ELGi Equipments</td></tr>
+        <tr><td>7 Years</td><td>Lending, Credit &amp; Capital — Leading NBFC</td></tr>
+        <tr><td>Since then</td><td>Construction, Mining Machinery, Heavy Industry — South India</td></tr>
+        <tr><td>Parallel</td><td>Fundraising Advisory — ₹710 Crores raised across real estate &amp; infrastructure</td></tr>
+        <tr><td>Now</td><td>Career Clarity Coach — scalexglobal.in/career-clarity</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:var(--space-m);">He publishes daily Bhagavad Gita commentary through <strong>DailyGita</strong> — a WhatsApp channel — because he believes ancient wisdom is not historical. It is operational.</p>
+  </div>
+</section>
+
+<!-- ── S10 · For Institutions ────────────────────────────── -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="cc-eyebrow-gold">For Institutions — Schools, Colleges &amp; Corporates</div>
+    <h2 style="color:#fff;">Your Students Are Confused About Their Direction.<br>One Session With Venky Changes That.</h2>
+    <div class="cc-divider-gold"></div>
+    <p style="max-width:62ch; color:rgba(255,255,255,0.8);">Career confusion is not an individual problem. It is an institutional one. Every year, thousands of students graduate without a clear sense of who they are or where they're going. Every year, professionals clock in and out — capable but directionless.</p>
+    <p style="max-width:62ch; color:rgba(255,255,255,0.8); margin-top:1rem;">One talk does not solve that permanently. But it plants something no classroom curriculum does. A question. An honest one. That the student or professional carries with them for years.</p>
+
+    <div class="cc-institution-grid">
+      <div class="cc-institution-card">
+        <h4>Schools — Career Awareness Sessions</h4>
+        <p>Designed for Classes 10, 11, and 12. The moment when students face their first major life decision — stream selection, college choice, career direction — with almost no honest guidance. Venky doesn't tell them what to choose. He teaches them how to choose.</p>
+      </div>
+      <div class="cc-institution-card">
+        <h4>Colleges &amp; Universities — Clarity Keynotes &amp; Workshops</h4>
+        <p>For undergraduate and postgraduate students navigating placement season, higher education decisions, and the gap between what they studied and what they want to do. Available as keynote sessions (45–60 min), half-day workshops, or orientation programme anchors.</p>
+      </div>
+      <div class="cc-institution-card">
+        <h4>Corporates &amp; Industries — Professional Direction Sessions</h4>
+        <p>For mid-level professionals at career crossroads. For HR teams building career development frameworks. For leadership cohorts preparing the next generation of managers. Particularly effective in construction, manufacturing, infrastructure, and industrial sectors.</p>
+      </div>
+    </div>
+
+    <p style="max-width:62ch; color:rgba(255,255,255,0.8); font-weight:600;">What participants leave with:</p>
+    <ul class="cc-gold-list">
+      <li>Not a motivational high that fades by Monday.</li>
+      <li>A set of honest questions — and the beginning of honest answers — that stay with them.</li>
+      <li>A direct path to follow-up one-to-one coaching if they want to go deeper.</li>
+    </ul>
+
+    <div class="cc-fee-box">
+      <strong>₹25,000 – ₹50,000 per engagement</strong>
+      <span>Depending on audience size, session duration, and travel requirements. Outstation engagements welcome. Pan-India availability.</span>
+    </div>
+
+    <a href="#institution-inquiry" class="btn btn-gold mt-m">Invite Venky to Your Institution — Start the Conversation</a>
+    <p class="small mt-s" style="color:rgba(255,255,255,0.5);">Response within 48 hours.</p>
+  </div>
+</section>
+
+<!-- ── S11 · A Note for Parents ──────────────────────────── -->
+<section class="section cc-parent-section">
+  <div class="container">
+    <div class="cc-eyebrow-gold">A Note for Parents</div>
+    <h2>If You're a Parent Reading This —</h2>
+    <div class="cc-divider-gold"></div>
+
+    <div style="max-width:64ch;">
+      <p>You want your child to succeed. Of course you do. You've invested everything — years, money, hope — into their education and their future.</p>
+      <p style="margin-top:1rem;">And now you watch them graduate, get placed, climb the ladder — and still sense that something is missing. A restlessness. A quiet dissatisfaction. A feeling that they are performing a life rather than living one.</p>
+      <p style="margin-top:1rem;">That feeling is real. And it deserves more than another motivational video.</p>
+      <p style="margin-top:1rem;">Career Clarity Coaching gives your child what no degree programme provides — a structured, personal, honest conversation about who they are and where they are going.</p>
+      <p style="margin-top:1rem;">Not to rebel against the path you've set. But to walk it — with conviction instead of confusion.</p>
+
+      <p style="margin-top:1.5rem; font-weight:600; color:var(--ink);">And at ₹1,999 —</p>
+      <ul class="cc-parent-list">
+        <li>It costs less than one semester's textbooks.</li>
+        <li>It costs less than one month of coaching classes.</li>
+        <li>It costs less than one wrong decision that sets them back two years.</li>
+      </ul>
+
+      <p class="cc-parent-quote">"The greatest gift you can give a young person is not a direction. It is the ability to find their own."<br>— Venkat Kumar Naidu</p>
+
+      <a href="#apply" class="btn btn-outline-gold">Share This Page With Your Child →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── S12 · Individual Application Form ─────────────────── -->
+<section class="section" id="apply" style="background:var(--card-bg);">
+  <div class="container">
+    <div class="cc-eyebrow-gold">Individual Application</div>
+    <h2>Ready to Find Your Direction?</h2>
+    <div class="cc-divider-gold"></div>
+
+    <div class="cc-form-intro">
+      <p style="font-weight:700; color:var(--ink);">Read this before you fill the form.</p>
+      <p>This is not a registration form. It is the beginning of a real conversation.</p>
+      <p>Venky reads every application personally. He selects applicants not based on their achievements — but on their honesty.</p>
+      <p>The most impressive application is not the one with the best resume. It is the one where the person tells the truth about where they are.</p>
+      <p style="font-weight:600; color:var(--ink);">Answer honestly. There are no right answers. There is only your truth.</p>
+    </div>
+
+    <!-- NOTE: replace this Formspree action with your own form endpoint once created -->
+    <form class="form" action="https://formspree.io/f/YOUR_CAREER_CLARITY_FORM_ID" method="POST" novalidate style="max-width:720px;">
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="cc-name">Full Name *</label>
+          <input type="text" id="cc-name" name="name" placeholder="As you'd like to be addressed" required />
+        </div>
+        <div class="form__group">
+          <label for="cc-age">Age *</label>
+          <input type="number" id="cc-age" name="age" min="14" max="99" required />
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="cc-city">City *</label>
+          <input type="text" id="cc-city" name="city" placeholder="Where you currently live" required />
+        </div>
+        <div class="form__group">
+          <label for="cc-status">Current Status *</label>
+          <select id="cc-status" name="status" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Student</option>
+            <option>Employed</option>
+            <option>Between Jobs</option>
+            <option>Entrepreneur</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label for="cc-education">Educational Background</label>
+        <input type="text" id="cc-education" name="education" placeholder="One line only — e.g. B.Tech CSE, JNTU 2023" />
+      </div>
+
+      <div class="form__group">
+        <label for="cc-doing">What are you doing right now?</label>
+        <textarea id="cc-doing" name="current_activity" placeholder="Professionally or academically — 2–3 lines"></textarea>
+      </div>
+
+      <div class="form__group">
+        <label for="cc-stuck">Where do you feel most stuck or unclear right now? *</label>
+        <textarea id="cc-stuck" name="stuck_point" placeholder="Be honest, not impressive. This is the most important field." required></textarea>
+      </div>
+
+      <div class="form__group">
+        <label for="cc-tried">What have you already tried to find clarity?</label>
+        <textarea id="cc-tried" name="tried_so_far" placeholder="Books, mentors, courses, therapy, anything — 2–3 lines"></textarea>
+      </div>
+
+      <div class="form__group">
+        <label for="cc-why">Why are you applying today?</label>
+        <textarea id="cc-why" name="why_now" placeholder="What changed or what pushed you here? — 2–3 lines"></textarea>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="cc-language">Preferred Language for Conversation</label>
+          <select id="cc-language" name="language">
+            <option value="" disabled selected>Select language</option>
+            <option>English</option>
+            <option>Telugu</option>
+            <option>Tamil</option>
+            <option>Hindi</option>
+            <option>Malayalam</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="cc-source">How did you find this page?</label>
+          <select id="cc-source" name="source">
+            <option value="" disabled selected>Select one</option>
+            <option>LinkedIn</option>
+            <option>Instagram</option>
+            <option>WhatsApp</option>
+            <option>Referred</option>
+            <option>Attended a Talk</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="cc-phone">Phone Number *</label>
+          <input type="tel" id="cc-phone" name="phone" placeholder="WhatsApp preferred" required />
+        </div>
+        <div class="form__group">
+          <label for="cc-email">Email Address *</label>
+          <input type="email" id="cc-email" name="email" required />
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-gold" style="margin-top:0.5rem; font-size:1rem; padding:1rem 2rem; width:100%; justify-content:center;">
+        Submit My Application — I'm Ready for Clarity
+      </button>
+
+      <p class="cc-form-note">
+        ₹1,999 — payable only after selection. Not before.<br>
+        Pay once. Venky stays reachable. No tiers. No further charges.<br>
+        Every application is read personally. Response within 72 hours.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- ── S13 · Institution Inquiry Form ────────────────────── -->
+<section class="section section--dark cc-form-dark" id="institution-inquiry">
+  <div class="container">
+    <div class="cc-eyebrow-gold">Institution Inquiry</div>
+    <h2 style="color:#fff;">Invite Venky to Speak at Your Institution</h2>
+    <div class="cc-divider-gold"></div>
+    <p style="max-width:62ch; color:rgba(255,255,255,0.8); margin-bottom:var(--space-l);">Fill the form below. Venky's team reviews every inquiry personally. Response within 48 hours.</p>
+
+    <!-- NOTE: replace this Formspree action with your own form endpoint once created -->
+    <form class="form" action="https://formspree.io/f/YOUR_INSTITUTION_INQUIRY_FORM_ID" method="POST" novalidate style="max-width:720px;">
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="inst-name">Institution Name *</label>
+          <input type="text" id="inst-name" name="institution_name" required />
+        </div>
+        <div class="form__group">
+          <label for="inst-type">Type *</label>
+          <select id="inst-type" name="institution_type" required>
+            <option value="" disabled selected>Select one</option>
+            <option>School</option>
+            <option>College</option>
+            <option>University</option>
+            <option>Corporate</option>
+            <option>Industry Association</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="inst-location">City &amp; State *</label>
+          <input type="text" id="inst-location" name="location" required />
+        </div>
+        <div class="form__group">
+          <label for="inst-size">Approximate Audience Size</label>
+          <input type="text" id="inst-size" name="audience_size" placeholder="e.g. 200 students / 50 professionals" />
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="inst-format">Preferred Format</label>
+          <select id="inst-format" name="format">
+            <option value="" disabled selected>Select format</option>
+            <option>Keynote 45–60 min</option>
+            <option>Workshop Half Day</option>
+            <option>Orientation Anchor</option>
+            <option>Custom</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="inst-date">Proposed Date or Timeframe</label>
+          <input type="text" id="inst-date" name="timeframe" placeholder="e.g. August 2026 / Flexible" />
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="inst-contact">Contact Person Name *</label>
+          <input type="text" id="inst-contact" name="contact_name" required />
+        </div>
+        <div class="form__group">
+          <label for="inst-designation">Designation</label>
+          <input type="text" id="inst-designation" name="designation" />
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="inst-phone">Phone Number *</label>
+          <input type="tel" id="inst-phone" name="phone" required />
+        </div>
+        <div class="form__group">
+          <label for="inst-email">Email Address *</label>
+          <input type="email" id="inst-email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label for="inst-outcome">What do you want your audience to walk away with?</label>
+        <textarea id="inst-outcome" name="desired_outcome" placeholder="Be specific — this shapes the session design"></textarea>
+      </div>
+
+      <div class="form__group">
+        <label for="inst-heard">How did you hear about Venky?</label>
+        <select id="inst-heard" name="referral_source">
+          <option value="" disabled selected>Select one</option>
+          <option>LinkedIn</option>
+          <option>Referred</option>
+          <option>Attended a Talk</option>
+          <option>Website</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-gold" style="margin-top:0.5rem; font-size:1rem; padding:1rem 2rem; width:100%; justify-content:center;">
+        Submit Institution Inquiry
+      </button>
+
+      <p class="cc-form-note" style="color:rgba(255,255,255,0.5);">Speaking fee: ₹25,000 – ₹50,000 per engagement. Discussed after inquiry.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <h3>ScaleX Global</h3>
+        <p>Career Clarity Coaching by Venkat Kumar Naidu. One-to-one. Selective intake. Become Exceptional.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fundraising.html">Fundraising Advisory</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Career Clarity</h4>
+        <ul>
+          <li><a href="#apply">Apply Now</a></li>
+          <li><a href="#institution-inquiry">Institution Inquiry</a></li>
+          <li><a href="https://www.linkedin.com/in/venkat-kumar-naidu/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://wa.me/916305224611" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ScaleX Global. All rights reserved.</span>
+      <span>Hyderabad, India &nbsp;·&nbsp; Pan-India Operations</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
