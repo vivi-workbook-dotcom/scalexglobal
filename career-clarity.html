@@ -50,8 +50,19 @@
     .cc-hero__note { font-size: 0.82rem; color: rgba(255,255,255,0.55); }
     .cc-hero__tagline { margin-top: var(--space-l); font-family: var(--font-head); font-style: italic; color: var(--gold); font-size: 0.95rem; }
 
-    .btn-gold { background: var(--gold); color: #1a1a1a; border-color: var(--gold); }
-    .btn-gold:hover { background: #a1811f; border-color: #a1811f; transform: translateY(-1px); }
+    .btn-gold {
+      background: linear-gradient(135deg, #F5D580 0%, #E0B84A 30%, #C89A2E 70%, #F0CA6A 100%);
+      color: #3a2a06;
+      border-color: #D4AF37;
+      box-shadow: 0 2px 10px rgba(212,175,55,0.35), inset 0 1px 0 rgba(255,255,255,0.5);
+      text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+    }
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #F8DE96 0%, #E9C560 30%, #D2A83B 70%, #F4D27E 100%);
+      border-color: #E0B84A;
+      box-shadow: 0 4px 16px rgba(212,175,55,0.5), inset 0 1px 0 rgba(255,255,255,0.6);
+      transform: translateY(-1px);
+    }
     .btn-outline-gold { background: transparent; color: var(--gold); border-color: var(--gold); }
     .btn-outline-gold:hover { background: var(--gold); color: #1a1a1a; }
 
