@@ -231,6 +231,23 @@
       .cc-what-grid { grid-template-columns: 1fr; }
       .cc-what-grid__img { order: -1; }
     }
+
+    /* ── Lightbox (click image to view full-size) ── */
+    .cc-lightbox-trigger { cursor: zoom-in; }
+    .cc-lightbox-overlay {
+      position: fixed; inset: 0; background: rgba(10,10,20,0.9);
+      display: none; align-items: center; justify-content: center;
+      padding: 2rem; z-index: 9999;
+    }
+    .cc-lightbox-overlay.active { display: flex; }
+    .cc-lightbox-overlay img { max-width: 95vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+    .cc-lightbox-close {
+      position: absolute; top: 1.25rem; right: 1.25rem;
+      width: 42px; height: 42px; border-radius: 50%;
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); color: #fff;
+      font-size: 1.4rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    }
+    .cc-lightbox-close:hover { background: rgba(255,255,255,0.22); }
   </style>
 </head>
 <body class="cc-page">
@@ -350,7 +367,7 @@
         <p class="cc-summary-italic">That's what a Clarity Conversation delivers.</p>
       </div>
       <div class="cc-what-grid__img">
-        <img src="career-clarity-course-vs-conversation.jpg" alt="Course vs Clarity Conversation — generic and overwhelming vs personal, focused, transformational" style="width:100%; border-radius:12px; display:block;" />
+        <img src="career-clarity-course-vs-conversation.jpg" alt="Course vs Clarity Conversation — generic and overwhelming vs personal, focused, transformational" class="cc-lightbox-trigger" style="width:100%; border-radius:12px; display:block;" />
       </div>
     </div>
   </div>
@@ -914,6 +931,44 @@
   </div>
 </footer>
 
+<!-- ── Lightbox overlay ───────────────────────────────────── -->
+<div class="cc-lightbox-overlay" id="cc-lightbox">
+  <button class="cc-lightbox-close" id="cc-lightbox-close" aria-label="Close">&times;</button>
+  <img id="cc-lightbox-img" src="" alt="" />
+</div>
+
 <script src="script.js"></script>
+<script>
+  (function () {
+    var overlay = document.getElementById('cc-lightbox');
+    var overlayImg = document.getElementById('cc-lightbox-img');
+    var closeBtn = document.getElementById('cc-lightbox-close');
+
+    function openLightbox(src, alt) {
+      overlayImg.src = src;
+      overlayImg.alt = alt || '';
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      overlay.classList.remove('active');
+      overlayImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.cc-lightbox-trigger').forEach(function (img) {
+      img.addEventListener('click', function () {
+        openLightbox(img.getAttribute('src'), img.getAttribute('alt'));
+      });
+    });
+    closeBtn.addEventListener('click', closeLightbox);
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  })();
+</script>
 </body>
 </html>
