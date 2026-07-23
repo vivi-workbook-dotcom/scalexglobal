@@ -223,6 +223,14 @@
 
     /* ── Institution card icon slots (S10) ── */
     .cc-institution-card { text-align: left; }
+
+    /* ── What This Is: text + image two-column (S3) ── */
+    .cc-what-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: var(--space-xl); align-items: center; margin-top: var(--space-l); }
+    .cc-outcome-grid--stack { grid-template-columns: 1fr; margin-top: var(--space-m); }
+    @media (max-width: 860px) {
+      .cc-what-grid { grid-template-columns: 1fr; }
+      .cc-what-grid__img { order: -1; }
+    }
   </style>
 </head>
 <body class="cc-page">
@@ -319,24 +327,32 @@
     <div class="cc-eyebrow-gold">What This Is</div>
     <h2>Not a Course. Not a Cohort.<br>This Is a Conversation.</h2>
     <div class="cc-divider-gold"></div>
-    <p style="max-width:62ch;">One conversation. With Venky. Personally. No slides. No modules. No copy-paste frameworks.</p>
-    <p style="max-width:62ch; margin-top:0.75rem;">Just your truth — met with 25 years of listening.</p>
 
-    <div class="cc-outcome-grid">
-      <div class="cc-outcome-card">
-        <div class="cc-outcome-num">1</div>
-        <h4>You say — maybe for the first time — exactly where you stand.</h4>
+    <div class="cc-what-grid">
+      <div class="cc-what-grid__text">
+        <p style="max-width:62ch;">One conversation. With Venky. Personally. No slides. No modules. No copy-paste frameworks.</p>
+        <p style="max-width:62ch; margin-top:0.75rem;">Just your truth — met with 25 years of listening.</p>
+
+        <div class="cc-outcome-grid cc-outcome-grid--stack">
+          <div class="cc-outcome-card">
+            <div class="cc-outcome-num">1</div>
+            <h4>You say — maybe for the first time — exactly where you stand.</h4>
+          </div>
+          <div class="cc-outcome-card">
+            <div class="cc-outcome-num">2</div>
+            <h4>Venky reflects it back with clarity you couldn't find alone.</h4>
+          </div>
+          <div class="cc-outcome-card">
+            <div class="cc-outcome-num">3</div>
+            <h4>You leave with a real next step. Specific. Yours.</h4>
+          </div>
+        </div>
+        <p class="cc-summary-italic">That's what a Clarity Conversation delivers.</p>
       </div>
-      <div class="cc-outcome-card">
-        <div class="cc-outcome-num">2</div>
-        <h4>Venky reflects it back with clarity you couldn't find alone.</h4>
-      </div>
-      <div class="cc-outcome-card">
-        <div class="cc-outcome-num">3</div>
-        <h4>You leave with a real next step. Specific. Yours.</h4>
+      <div class="cc-what-grid__img">
+        <img src="career-clarity-course-vs-conversation.jpg" alt="Course vs Clarity Conversation — generic and overwhelming vs personal, focused, transformational" style="width:100%; border-radius:12px; display:block;" />
       </div>
     </div>
-    <p class="cc-summary-italic">That's what a Clarity Conversation delivers.</p>
   </div>
 </section>
 
