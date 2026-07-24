@@ -100,6 +100,13 @@
     .cc-raja-rishi-card p { color: rgba(255,255,255,0.8); max-width: none; }
     @media (max-width: 700px) { .cc-raja-rishi { grid-template-columns: 1fr; } }
 
+    .cc-rajarshi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: center; margin: var(--space-m) 0; }
+    .cc-rajarshi-grid .cc-raja-rishi { margin: 0; }
+    @media (max-width: 860px) {
+      .cc-rajarshi-grid { grid-template-columns: 1fr; }
+      .cc-rajarshi-grid__img { order: -1; }
+    }
+
     .cc-gold-list { list-style: none; max-width: 62ch; margin: var(--space-m) 0; }
     .cc-gold-list li { position: relative; padding-left: 1.6rem; margin-bottom: 0.75rem; color: rgba(255,255,255,0.85); }
     .cc-gold-list li::before { content: '▸'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
@@ -379,19 +386,21 @@
     <div class="cc-divider-gold"></div>
     <p style="max-width:62ch; color:rgba(255,255,255,0.8);">Rajarshi — an ancient Sanskrit word, two roots.</p>
 
-    <!-- IMAGE PLACEHOLDER: Rajarshi symbol / crest illustration, square -->
-    <div class="cc-img-slot cc-img-slot--dark cc-img-slot--square" style="max-width:180px; margin:var(--space-m) 0;">
-      IMAGE<br>Symbol / crest
-    </div>
-
-    <div class="cc-raja-rishi">
-      <div class="cc-raja-rishi-card">
-        <h3>RAJA</h3>
-        <p>The one who leads, acts, holds ground.</p>
+    <div class="cc-rajarshi-grid">
+      <div class="cc-rajarshi-grid__text">
+        <div class="cc-raja-rishi">
+          <div class="cc-raja-rishi-card">
+            <h3>RAJA</h3>
+            <p>The one who leads, acts, holds ground.</p>
+          </div>
+          <div class="cc-raja-rishi-card">
+            <h3>RISHI</h3>
+            <p>The one who sees clearly before acting.</p>
+          </div>
+        </div>
       </div>
-      <div class="cc-raja-rishi-card">
-        <h3>RISHI</h3>
-        <p>The one who sees clearly before acting.</p>
+      <div class="cc-rajarshi-grid__img">
+        <img src="career-clarity-raja-rishi.jpg" alt="Raja — Courage, Leadership, Execution. Rishi — Wisdom, Reflection, Vision. Become Exceptional." class="cc-lightbox-trigger" style="width:100%; border-radius:12px; display:block;" />
       </div>
     </div>
 
