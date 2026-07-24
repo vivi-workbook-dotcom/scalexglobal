@@ -120,14 +120,13 @@
     .cc-step-callout strong { color: var(--navy-deep); }
 
     .cc-price { text-align: center; }
-    .cc-price__num { font-family: var(--font-head); font-weight: 800; font-size: clamp(3rem, 8vw, 5rem); color: var(--navy-deep); line-height: 1; }
+    .cc-price__num { font-family: var(--font-head); font-weight: 800; font-size: clamp(2.75rem, 6vw, 4rem); color: var(--navy-deep); line-height: 1; }
     .cc-price__tag { color: var(--gold); font-weight: 700; letter-spacing: 0.04em; margin: 0.5rem 0 var(--space-m); }
-    .cc-price-why { max-width: 62ch; margin: var(--space-l) auto 0; }
-    .cc-price-table { width: 100%; max-width: 640px; margin: var(--space-m) auto; border-collapse: collapse; }
-    .cc-price-table th, .cc-price-table td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
-    .cc-price-table th { color: var(--ink-3); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
-    .cc-price-table tr:last-child td { font-weight: 700; color: var(--navy-deep); border-bottom: none; }
-    .cc-price-table td:last-child, .cc-price-table th:last-child { text-align: right; }
+
+    .cc-how-invest-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--space-xl); align-items: start; }
+    @media (max-width: 900px) {
+      .cc-how-invest-grid { grid-template-columns: 1fr; }
+    }
 
     .cc-timeline-table { width: 100%; margin-top: var(--space-m); border-collapse: collapse; }
     .cc-timeline-table th, .cc-timeline-table td { padding: 0.65rem 1rem 0.65rem 0; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
@@ -422,93 +421,81 @@
   </div>
 </section>
 
-<!-- ── S7 · How It Works ──────────────────────────────────── -->
+<!-- ── S7 · How It Works + The Investment ─────────────────── -->
 <section class="section" style="background:var(--card-bg);">
   <div class="container">
-    <div class="cc-eyebrow-gold">How It Works</div>
-    <h2>Simple. Personal. No Surprises.</h2>
-    <div class="cc-divider-gold"></div>
+    <div class="cc-how-invest-grid">
+      <div class="cc-how-invest-grid__how">
+        <div class="cc-eyebrow-gold">How It Works</div>
+        <h2>Simple. Personal. No Surprises.</h2>
+        <div class="cc-divider-gold"></div>
 
-    <div class="steps">
-      <div class="step">
-        <div class="step__num cc-step__num">1</div>
-        <div>
-          <h4>You Apply</h4>
-          <p>Answer honestly, not impressively. Venky reads every application himself.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num cc-step__num">1</div>
+            <div>
+              <h4>You Apply</h4>
+              <p>Answer honestly, not impressively. Venky reads every application himself.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num cc-step__num">2</div>
+            <div>
+              <h4>Venky Reviews</h4>
+              <p>Reply within 72 hours. If selected, your session gets scheduled.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num cc-step__num">3</div>
+            <div>
+              <h4>Pay &amp; Confirm</h4>
+              <p>₹1,999 to confirm your slot — only after selection.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num cc-step__num">4</div>
+            <div>
+              <h4>The Conversation</h4>
+              <p>One focused session. All about you. Venky asks, you answer, clarity emerges.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num cc-step__num">5</div>
+            <div>
+              <h4>Venky Stays Reachable</h4>
+              <p>WhatsApp or email after — for a quick check-in whenever you need it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cc-step-callout">
+          <strong>Pay once. Venky stays reachable.</strong><br>
+          No tiers. No upgrades. No further charges. Ever.
         </div>
       </div>
-      <div class="step">
-        <div class="step__num cc-step__num">2</div>
-        <div>
-          <h4>Venky Reviews</h4>
-          <p>Reply within 72 hours. If selected, your session gets scheduled.</p>
+
+      <div class="cc-how-invest-grid__invest cc-price">
+        <div class="cc-eyebrow-gold">The Investment</div>
+        <div class="cc-price__num">₹1,999</div>
+        <div class="cc-price__tag">One Payment.&nbsp; No Tiers.&nbsp; No Surprises.</div>
+
+        <div style="text-align:left;">
+          <p>Apply. Get selected. Pay ₹1,999. Have the conversation. Venky stays reachable. That's the entire model.</p>
+
+          <h3 class="mt-l" style="color:var(--navy-deep);">Why ₹1,999?</h3>
+          <p style="margin-top:0.75rem;">Free feels worthless. ₹1,999 signals you're serious — and stays light enough that price is never the reason you say no.</p>
+
+          <ul class="cc-truth-list mt-m">
+            <li>A student in Kakinada can afford it.</li>
+            <li>A first-year professional pays it without hesitation.</li>
+            <li>A parent pays it gratefully.</li>
+          </ul>
         </div>
-      </div>
-      <div class="step">
-        <div class="step__num cc-step__num">3</div>
-        <div>
-          <h4>Pay &amp; Confirm</h4>
-          <p>₹1,999 to confirm your slot — only after selection.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__num cc-step__num">4</div>
-        <div>
-          <h4>The Conversation</h4>
-          <p>One focused session. All about you. Venky asks, you answer, clarity emerges.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__num cc-step__num">5</div>
-        <div>
-          <h4>Venky Stays Reachable</h4>
-          <p>WhatsApp or email after — for a quick check-in whenever you need it.</p>
-        </div>
+
+        <a href="#apply" class="btn btn-gold mt-l">Apply Now — ₹1,999 for a Conversation That Changes Direction</a>
+        <p class="small mt-s" style="color:var(--ink-3);">Payment collected only after selection. Not before.</p>
       </div>
     </div>
-
-    <div class="cc-step-callout">
-      <strong>Pay once. Venky stays reachable.</strong><br>
-      No tiers. No upgrades. No further charges. Ever.
-    </div>
-  </div>
-</section>
-
-<!-- ── S8 · The Investment ───────────────────────────────── -->
-<section class="section">
-  <div class="container cc-price">
-    <div class="cc-eyebrow-gold">The Investment</div>
-    <div class="cc-price__num">₹1,999</div>
-    <div class="cc-price__tag">One Payment.&nbsp; No Tiers.&nbsp; No Surprises.</div>
-
-    <div style="max-width:60ch; margin:0 auto; text-align:left;">
-      <p>Apply. Get selected. Pay ₹1,999. Have the conversation. Venky stays reachable. That's the entire model.</p>
-
-      <h3 class="mt-l" style="color:var(--navy-deep);">Why ₹1,999?</h3>
-      <p style="margin-top:0.75rem;">Free feels worthless. ₹1,999 signals you're serious — and stays light enough that price is never the reason you say no.</p>
-
-      <ul class="cc-truth-list mt-m">
-        <li>A student in Kakinada can afford it.</li>
-        <li>A first-year professional pays it without hesitation.</li>
-        <li>A parent pays it gratefully.</li>
-      </ul>
-    </div>
-
-    <table class="cc-price-table">
-      <thead>
-        <tr><th>What ₹1,999 Replaces</th><th>Typical Cost</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>One wrong job that costs you a year</td><td>₹3–5 Lakh in opportunity loss</td></tr>
-        <tr><td>One MBA cycle spent confused</td><td>₹50,000+ in time &amp; fees</td></tr>
-        <tr><td>6 months of career drift</td><td>Unquantifiable</td></tr>
-        <tr><td>A career coaching programme</td><td>₹15,000–₹50,000</td></tr>
-        <tr><td>This conversation</td><td>₹1,999</td></tr>
-      </tbody>
-    </table>
-
-    <a href="#apply" class="btn btn-gold mt-l">Apply Now — ₹1,999 for a Conversation That Changes Direction</a>
-    <p class="small mt-s" style="color:var(--ink-3);">Payment collected only after selection. Not before.</p>
   </div>
 </section>
 
