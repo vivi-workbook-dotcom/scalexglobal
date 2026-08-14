@@ -1,0 +1,23 @@
+{
+  "name": "scalexglobal",
+  "version": "1.0.0",
+  "description": "ScaleX Global - Fundraising Advisory and Career Coaching",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivi-workbook-dotcom/scalexglobal.git"
+  },
+  "keywords": ["fundraising", "advisory", "career-coaching"],
+  "author": "ScaleX Global",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivi-workbook-dotcom/scalexglobal/issues"
+  },
+  "homepage": "https://github.com/vivi-workbook-dotcom/scalexglobal#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
