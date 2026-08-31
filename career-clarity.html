@@ -100,6 +100,21 @@
     }
     .cc-service-card p { font-size: 0.9rem; color: var(--ink-2); max-width: none; flex: 1; }
     .cc-service-card .btn { margin-top: var(--space-m); align-self: flex-start; }
+
+    .cc-programs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-m); margin-top: var(--space-m); }
+    .cc-program-card {
+      display: flex; align-items: center; justify-content: space-between; gap: var(--space-l);
+      background: var(--navy-deep); border-radius: 10px; padding: var(--space-l) var(--space-m);
+    }
+    .cc-program-card__content .cc-service-card__badge { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); }
+    .cc-program-card h3 { color: #fff; font-size: 1.3rem; margin: 0.6rem 0 0.6rem; }
+    .cc-program-card p { font-size: 0.92rem; color: rgba(255,255,255,0.75); max-width: 40ch; }
+    .cc-program-card .btn { flex-shrink: 0; white-space: nowrap; }
+    @media (max-width: 860px) {
+      .cc-programs-grid { grid-template-columns: 1fr; }
+      .cc-program-card { flex-direction: column; align-items: flex-start; }
+    }
+
     .cc-services-callout { margin-top: var(--space-l); font-size: 1rem; color: var(--ink-2); }
     .cc-calendly-link { color: var(--navy-deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 
@@ -335,12 +350,6 @@
         <a href="#apply" class="btn btn-outline-gold">Start Here →</a>
       </div>
       <div class="cc-service-card">
-        <h3>Career Direction Program</h3>
-        <div class="cc-service-card__badge">4–6 Week Package</div>
-        <p>Ongoing 1:1 coaching to go from "I don't know what I want" to a clear, actionable path — major/career choice, internship targeting, or first-job direction.</p>
-        <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
-      </div>
-      <div class="cc-service-card">
         <h3>Career Pivot Coaching</h3>
         <div class="cc-service-card__badge">For Working Professionals</div>
         <p>For people who are employed but feel misaligned — helping them decide whether to switch roles, industries, or paths, with a plan to get there.</p>
@@ -352,10 +361,23 @@
         <p>Translating your newfound direction into a resume, LinkedIn profile, and interview narrative that actually reflects it.</p>
         <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
       </div>
-      <div class="cc-service-card">
-        <h3>Group Clarity Cohort</h3>
-        <div class="cc-service-card__badge">Small-Group Program</div>
-        <p>A small-group program for students or early-career professionals — a lower-cost entry point that builds community around the same clarity process.</p>
+    </div>
+
+    <div class="cc-programs-grid">
+      <div class="cc-program-card">
+        <div class="cc-program-card__content">
+          <div class="cc-service-card__badge">4–6 Week Package</div>
+          <h3>Career Direction Program</h3>
+          <p>Ongoing 1:1 coaching to go from "I don't know what I want" to a clear, actionable path — major/career choice, internship targeting, or first-job direction.</p>
+        </div>
+        <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
+      </div>
+      <div class="cc-program-card">
+        <div class="cc-program-card__content">
+          <div class="cc-service-card__badge">Small-Group Program</div>
+          <h3>Group Clarity Cohort</h3>
+          <p>A small-group program for students or early-career professionals — a lower-cost entry point that builds community around the same clarity process.</p>
+        </div>
         <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
       </div>
     </div>
