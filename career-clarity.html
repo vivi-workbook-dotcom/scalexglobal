@@ -91,10 +91,30 @@
       display: flex; flex-direction: column; background: #fff;
       border: 1px solid var(--border); border-radius: 10px; padding: var(--space-m);
     }
-    .cc-service-card__eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
     .cc-service-card h3 { color: var(--navy-deep); font-size: 1.1rem; margin-bottom: 0.6rem; }
+    .cc-service-card__badge {
+      display: inline-block; align-self: flex-start;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--gold); background: rgba(184,149,42,0.1); border: 1px solid rgba(184,149,42,0.35);
+      border-radius: 999px; padding: 0.3rem 0.75rem; margin-bottom: 0.75rem;
+    }
     .cc-service-card p { font-size: 0.9rem; color: var(--ink-2); max-width: none; flex: 1; }
     .cc-service-card .btn { margin-top: var(--space-m); align-self: flex-start; }
+
+    .cc-programs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-m); margin-top: var(--space-m); }
+    .cc-program-card {
+      display: flex; align-items: center; justify-content: space-between; gap: var(--space-l);
+      background: var(--navy-deep); border-radius: 10px; padding: var(--space-l) var(--space-m);
+    }
+    .cc-program-card__content .cc-service-card__badge { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); }
+    .cc-program-card h3 { color: #fff; font-size: 1.3rem; margin: 0.6rem 0 0.6rem; }
+    .cc-program-card p { font-size: 0.92rem; color: rgba(255,255,255,0.75); max-width: 40ch; }
+    .cc-program-card .btn { flex-shrink: 0; white-space: nowrap; }
+    @media (max-width: 860px) {
+      .cc-programs-grid { grid-template-columns: 1fr; }
+      .cc-program-card { flex-direction: column; align-items: flex-start; }
+    }
+
     .cc-services-callout { margin-top: var(--space-l); font-size: 1rem; color: var(--ink-2); }
     .cc-calendly-link { color: var(--navy-deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 
@@ -320,37 +340,44 @@
     <div class="cc-eyebrow-gold">How We Work Together</div>
     <h2>Pick the Path That Fits Where You Are</h2>
     <div class="cc-divider-gold"></div>
-    <p style="max-width:62ch;">One coach. A few different ways to work together, depending on how stuck you are and how much support you need.</p>
+    <p style="max-width:62ch;">A few different ways to work together, depending on how stuck you are and how much support you need.</p>
 
     <div class="cc-services-grid">
       <div class="cc-service-card">
-        <div class="cc-service-card__eyebrow">Single Session</div>
         <h3>Clarity Discovery Session</h3>
+        <div class="cc-service-card__badge">Single Session</div>
         <p>A 60–90 min deep-dive to map where you are now vs. where you want to be. Best for someone who feels stuck and needs a starting point — ideal entry offer for students.</p>
         <a href="#apply" class="btn btn-outline-gold">Start Here →</a>
       </div>
       <div class="cc-service-card">
-        <div class="cc-service-card__eyebrow">4–6 Week Package</div>
-        <h3>Career Direction Program</h3>
-        <p>Ongoing 1:1 coaching to go from "I don't know what I want" to a clear, actionable path — major/career choice, internship targeting, or first-job direction.</p>
-        <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
-      </div>
-      <div class="cc-service-card">
-        <div class="cc-service-card__eyebrow">For Working Professionals</div>
         <h3>Career Pivot Coaching</h3>
+        <div class="cc-service-card__badge">For Working Professionals</div>
         <p>For people who are employed but feel misaligned — helping them decide whether to switch roles, industries, or paths, with a plan to get there.</p>
         <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
       </div>
       <div class="cc-service-card">
-        <div class="cc-service-card__eyebrow">Practical Add-On</div>
         <h3>Resume &amp; Interview Clarity Prep</h3>
+        <div class="cc-service-card__badge">Practical Add-On</div>
         <p>Translating your newfound direction into a resume, LinkedIn profile, and interview narrative that actually reflects it.</p>
         <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
       </div>
-      <div class="cc-service-card">
-        <div class="cc-service-card__eyebrow">Small-Group Program</div>
-        <h3>Group Clarity Cohort</h3>
-        <p>A small-group program for students or early-career professionals — a lower-cost entry point that builds community around the same clarity process.</p>
+    </div>
+
+    <div class="cc-programs-grid">
+      <div class="cc-program-card">
+        <div class="cc-program-card__content">
+          <div class="cc-service-card__badge">4–6 Week Package</div>
+          <h3>Career Direction Program</h3>
+          <p>Ongoing 1:1 coaching to go from "I don't know what I want" to a clear, actionable path — major/career choice, internship targeting, or first-job direction.</p>
+        </div>
+        <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
+      </div>
+      <div class="cc-program-card">
+        <div class="cc-program-card__content">
+          <div class="cc-service-card__badge">Small-Group Program</div>
+          <h3>Group Clarity Cohort</h3>
+          <p>A small-group program for students or early-career professionals — a lower-cost entry point that builds community around the same clarity process.</p>
+        </div>
         <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
       </div>
     </div>
