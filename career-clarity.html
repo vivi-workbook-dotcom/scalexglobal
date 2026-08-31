@@ -86,6 +86,18 @@
     .cc-callout { border-left: 4px solid var(--gold); padding: 0.2rem 0 0.2rem 1.25rem; margin: var(--space-m) 0; max-width: 60ch; }
     .cc-callout strong { color: var(--navy-deep); font-family: var(--font-head); font-style: italic; font-weight: 700; font-size: 1.3rem; }
 
+    .cc-services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-m); margin-top: var(--space-l); }
+    .cc-service-card {
+      display: flex; flex-direction: column; background: #fff;
+      border: 1px solid var(--border); border-radius: 10px; padding: var(--space-m);
+    }
+    .cc-service-card__eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+    .cc-service-card h3 { color: var(--navy-deep); font-size: 1.1rem; margin-bottom: 0.6rem; }
+    .cc-service-card p { font-size: 0.9rem; color: var(--ink-2); max-width: none; flex: 1; }
+    .cc-service-card .btn { margin-top: var(--space-m); align-self: flex-start; }
+    .cc-services-callout { margin-top: var(--space-l); font-size: 1rem; color: var(--ink-2); }
+    .cc-calendly-link { color: var(--navy-deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
     .cc-outcome-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-m); margin-top: var(--space-l); }
     .cc-outcome-card { }
     .cc-outcome-num {
@@ -302,7 +314,52 @@
   </div>
 </section>
 
-<!-- ── S2 · The Uncomfortable Truth ──────────────────────── -->
+<!-- ── S2 · Services ──────────────────────────────────────── -->
+<section class="section" id="services" style="background:var(--card-bg);">
+  <div class="container">
+    <div class="cc-eyebrow-gold">How We Work Together</div>
+    <h2>Pick the Path That Fits Where You Are</h2>
+    <div class="cc-divider-gold"></div>
+    <p style="max-width:62ch;">One coach. A few different ways to work together, depending on how stuck you are and how much support you need.</p>
+
+    <div class="cc-services-grid">
+      <div class="cc-service-card">
+        <div class="cc-service-card__eyebrow">Single Session</div>
+        <h3>Clarity Discovery Session</h3>
+        <p>A 60–90 min deep-dive to map where you are now vs. where you want to be. Best for someone who feels stuck and needs a starting point — ideal entry offer for students.</p>
+        <a href="#apply" class="btn btn-outline-gold">Start Here →</a>
+      </div>
+      <div class="cc-service-card">
+        <div class="cc-service-card__eyebrow">4–6 Week Package</div>
+        <h3>Career Direction Program</h3>
+        <p>Ongoing 1:1 coaching to go from "I don't know what I want" to a clear, actionable path — major/career choice, internship targeting, or first-job direction.</p>
+        <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
+      </div>
+      <div class="cc-service-card">
+        <div class="cc-service-card__eyebrow">For Working Professionals</div>
+        <h3>Career Pivot Coaching</h3>
+        <p>For people who are employed but feel misaligned — helping them decide whether to switch roles, industries, or paths, with a plan to get there.</p>
+        <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
+      </div>
+      <div class="cc-service-card">
+        <div class="cc-service-card__eyebrow">Practical Add-On</div>
+        <h3>Resume &amp; Interview Clarity Prep</h3>
+        <p>Translating your newfound direction into a resume, LinkedIn profile, and interview narrative that actually reflects it.</p>
+        <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
+      </div>
+      <div class="cc-service-card">
+        <div class="cc-service-card__eyebrow">Small-Group Program</div>
+        <h3>Group Clarity Cohort</h3>
+        <p>A small-group program for students or early-career professionals — a lower-cost entry point that builds community around the same clarity process.</p>
+        <a href="#apply" class="btn btn-outline-gold">Apply Now →</a>
+      </div>
+    </div>
+
+    <p class="cc-services-callout">Not sure where to start? <a href="#" class="cc-calendly-link"><!-- TODO: replace with Calendly / booking link -->Book a free 30-minute call</a> and Venky will help you figure out the right fit.</p>
+  </div>
+</section>
+
+<!-- ── S3 · The Uncomfortable Truth ──────────────────────── -->
 <section class="section">
   <div class="container">
     <div class="cc-eyebrow-gold">The Uncomfortable Truth</div>
@@ -335,7 +392,7 @@
   </div>
 </section>
 
-<!-- ── S3 · What This Is (Not a Course) ──────────────────── -->
+<!-- ── S4 · What This Is (Not a Course) ──────────────────── -->
 <section class="section" style="background:var(--card-bg);">
   <div class="container">
     <div class="cc-eyebrow-gold">What This Is</div>
@@ -370,7 +427,7 @@
   </div>
 </section>
 
-<!-- ── S4 · Who This Is For ──────────────────────────────── -->
+<!-- ── S5 · Who This Is For ──────────────────────────────── -->
 <section class="section">
   <div class="container">
     <div class="cc-eyebrow-gold">Who This Is For</div>
@@ -381,7 +438,7 @@
   </div>
 </section>
 
-<!-- ── S5 · The Rajarshi Framework ───────────────────────── -->
+<!-- ── S6 · The Rajarshi Framework ───────────────────────── -->
 <section class="section section--dark">
   <div class="container">
     <div class="cc-eyebrow-gold">The Rajarshi Framework</div>
@@ -419,7 +476,7 @@
   </div>
 </section>
 
-<!-- ── S6 · Vivekananda Anchor ───────────────────────────── -->
+<!-- ── S7 · Vivekananda Anchor ───────────────────────────── -->
 <section class="section cc-quote-section">
   <div class="container">
     <img src="career-clarity-vivekananda-quote.jpeg" alt="Take up one idea. Make that one idea your life — think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success. — Swami Vivekananda" class="cc-lightbox-trigger" style="width:100%; max-width:520px; display:block; margin:0 auto; border-radius:12px;" />
@@ -427,7 +484,7 @@
   </div>
 </section>
 
-<!-- ── S7 · How It Works + The Investment ─────────────────── -->
+<!-- ── S8 · How It Works + The Investment ─────────────────── -->
 <section class="section" style="background:var(--card-bg);">
   <div class="container">
     <div class="cc-how-invest-grid">
@@ -501,7 +558,7 @@
   </div>
 </section>
 
-<!-- ── S9 · About Your Coach ─────────────────────────────── -->
+<!-- ── S10 · About Your Coach ─────────────────────────────── -->
 <section class="section" style="background:var(--card-bg);">
   <div class="container">
     <div class="cc-eyebrow-gold">About Your Coach</div>
@@ -549,7 +606,7 @@
   </div>
 </section>
 
-<!-- ── S10 · For Institutions ────────────────────────────── -->
+<!-- ── S11 · For Institutions ────────────────────────────── -->
 <section class="section section--dark">
   <div class="container">
     <div class="cc-eyebrow-gold">For Institutions — Schools, Colleges &amp; Corporates</div>
@@ -605,7 +662,7 @@
   </div>
 </section>
 
-<!-- ── S11 · A Note for Parents ──────────────────────────── -->
+<!-- ── S12 · A Note for Parents ──────────────────────────── -->
 <section class="section cc-parent-section">
   <div class="container">
     <div class="cc-eyebrow-gold">A Note for Parents</div>
@@ -636,7 +693,7 @@
   </div>
 </section>
 
-<!-- ── S12 · Individual Application Form ─────────────────── -->
+<!-- ── S13 · Individual Application Form ─────────────────── -->
 <section class="section" id="apply" style="background:var(--card-bg);">
   <div class="container">
     <div class="cc-eyebrow-gold">Individual Application</div>
@@ -756,7 +813,7 @@
   </div>
 </section>
 
-<!-- ── S13 · Institution Inquiry Form ────────────────────── -->
+<!-- ── S14 · Institution Inquiry Form ────────────────────── -->
 <section class="section section--dark cc-form-dark" id="institution-inquiry">
   <div class="container">
     <div class="cc-eyebrow-gold">Institution Inquiry</div>
